@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 600px;
+  border: 5px solid;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+span {
+  font-family: Helvetica;
+}
+
+.one {
+  opacity: 0;
+  animation: 1s slideOne forwards;
+  position: absolute;
+}
+
+.two {
+  opacity: 0;
+  animation: 1s 1s slideTwo forwards;
+  position: absolute;
+}
+
+.three {
+  opacity: 0;
+  animation: 1s 2s slideThree forwards;
+  position: absolute;
+}
+
+.four {
+  opacity: 0;
+  animation: 1s 3s slideFour forwards;
+  position: absolute;
+}
+
+.five {
+  opacity: 0;
+  animation: 1s 4s slideFive forwards;
+  position: absolute;
+}
+
+.six {
+  opacity: 0;
+  animation: 1s 5s slideSix forwards;
+  position: absolute;
+}
+
+.seven {
+  opacity: 0;
+  animation: 1s 6s slideSeven forwards;
+  position: absolute;
+}
+
+@keyframes slideOne {
+  100% {
+    opacity: 1;
+    transform: translateX(75px);
+  }
+}
+
+@keyframes slideTwo {
+  100% {
+    opacity: 1;
+    transform: translateX(100px);
+  }
+}
+
+@keyframes slideFour {
+  100% {
+    opacity: 1;
+    transform: translateX(133px);
+  }
+}
+
+@keyframes slideFive {
+  100% {
+    opacity: 1;
+    transform: translateX(155px);
+  }
+}
+
+@keyframes slideSix {
+  100% {
+    opacity: 1;
+    transform: translateX(173px);
+  }
+}
+
+@keyframes slideSeven {
+  100% {
+    opacity: 1;
+    transform: translateX(193px);
+  }
+}
+
+.slide-right {
+  font-family: Helvetica;
+  padding: 20px;
+  position: absolute;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  opacity: 0;
+  animation: 1s 7s slideRight forwards;
+}
+
+.slide-left {
+  font-family: Helvetica;
+  padding: 20px;
+  position: absolute;
+  right: -100px;
+  width: 100px;
+  height: 100px;
+  margin-top: 270px;
+  opacity: 0;
+  animation: 1s 8s slideLeft forwards;
+}
+
+@keyframes slideRight {
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transition: 1s;
+    left: 700px;
+  }
+}
+
+@keyframes slideLeft {
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transition: 1s;
+    right: 700px;
+  }
+}
